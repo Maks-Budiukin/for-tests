@@ -10,17 +10,18 @@ let x = 0;
 let y = 0;
 
 function move(event) {
+    // square.setAttribute("style", `transition: transform 2s ease`)
     if (event.keyCode === DOWN) {
         y += 30;
-        square.setAttribute("style", `transform: translate(${x}px, ${y}px)`)
+        square.setAttribute("style", `transform: translate(${x}px, ${y}px);transition: transform 0.3s ease`)
     } else if (event.keyCode === UP) {
         y -= 30;
-        square.setAttribute("style", `transform: translate(${x}px, ${y}px)`)
+        square.setAttribute("style", `transform: translate(${x}px, ${y}px);transition: transform 0.3s ease`)
     } else if (event.keyCode === LEFT) {
         x -= 30;
-        square.setAttribute("style", `transform: translate(${x}px, ${y}px)`)
+        square.setAttribute("style", `transform: translate(${x}px, ${y}px);transition: transform 0.3s ease`)
     } else if (event.keyCode === RIGHT) {
         x += 30;
-        square.setAttribute("style", `transform: translate(${x}px, ${y}px)`)
+        square.setAttribute("style", `transform: translate(${x}px, ${y}px);transition: transform 0.3s ease`)
     }
 }
