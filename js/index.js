@@ -6,6 +6,7 @@ const DOWN = 40;
 
 const square = document.querySelector('.square');
 const exit = document.querySelector('.exit')
+const exitBigger = document.querySelector('.exit-bigger')
 const phraseEl = document.querySelector('.phrase')
 document.addEventListener('keydown', move);
 
@@ -111,47 +112,57 @@ function setPhrase() {
             break;
         case 16: phraseEl.textContent = 'КТО-ТО СЛИШКОМ МНОГО КУШАЕТ)))))'; exit.classList.add('visually-hidden');
             break;
-        case 17: phraseEl.textContent = 'ЛАДНО, ТЕПЕРЬ СЕРЬЕЗНО, НЕ ВЫХОДИ ЗА ЛИНИЮ!'
+        case 17: phraseEl.textContent = 'ОКЕЙ, ДЕРЖИ ДЫРКУ ПОБОЛЬШЕ. СМОТРИ НЕ ВЫВАЛИСЬ!'; exitBigger.classList.remove('visually-hidden');
             break;
-        case 18: phraseEl.textContent = 'ТЫ ДЕЛАЕШЬ МНЕ БОЛЬНО КАЖДЫЙ РАЗ, КОГДА ПЫТАЕШЬСЯ ВЫЙТИ!'
+        case 18: phraseEl.textContent = 'ВЫВАЛИЛСЯ! Я ЖЕ ГОВОРИЛ - НЕ НАДО ТУДА ЛЕЗТЬ!'; exitBigger.classList.add('visually-hidden'); square.classList.add('visually-hidden');
             break;
-        case 19: phraseEl.textContent = 'АЙ!'
+        case 19: phraseEl.textContent = 'ЛАДНО, НЕ НОЙ, ВОТ ТВОЙ КУБИК. '; square.classList.remove('visually-hidden');
             break;
-        case 20: phraseEl.textContent = 'АЙ! ОЙ! НУ ХВАТИТ'
+        case 20: phraseEl.textContent = 'МОЖЕТ С ШАРИКОМ БОЛЬШЕ ПОВЕЗЕТ?)'; square.classList.add('rounded');
             break;
-        case 21: phraseEl.textContent = 'Я ТАК И ЗНАЛ, ЧТО ТВОЯ ЦЕЛЬ - СДЕЛАТЬ МНЕ БОЛЬНО!'
+        case 21: phraseEl.textContent = '))))))))))))))))'; square.classList.remove('rounded');
             break;
-        case 22: phraseEl.textContent = 'ЛАДНО, МНЕ НЕ БОЛЬНО. НО Я ОБИДЕЛСЯ.'
+        case 22: phraseEl.textContent = 'ЛАДНО, ТЕПЕРЬ СЕРЬЕЗНО, НЕ ВЫХОДИ ЗА ЛИНИЮ!'
             break;
-        case 23: phraseEl.textContent = 'ВЫЙДЕШЬ ЕЩЕ РАЗ - УЙДУ В ПЕРЕЗАГРУЗКУ'
+        case 23: phraseEl.textContent = 'ТЫ ДЕЛАЕШЬ МНЕ БОЛЬНО КАЖДЫЙ РАЗ, КОГДА ПЫТАЕШЬСЯ ВЫЙТИ!'
             break;
-        case 24: phraseEl.textContent = 'ПЕРЕЗАГРУЗКА ЧЕРЕЗ 5...'
+        case 24: phraseEl.textContent = 'АЙ!'
             break;
-        case 25: phraseEl.textContent = '4...'
+        case 25: phraseEl.textContent = 'АЙ! ОЙ! НУ ХВАТИТ'
             break;
-        case 26: phraseEl.textContent = '3...'
+        case 26: phraseEl.textContent = 'Я ТАК И ЗНАЛ, ЧТО ТВОЯ ЦЕЛЬ - СДЕЛАТЬ МНЕ БОЛЬНО!'
             break;
-        case 27: phraseEl.textContent = '2...'
+        case 27: phraseEl.textContent = 'ЛАДНО, МНЕ НЕ БОЛЬНО. НО Я ОБИДЕЛСЯ.'
             break;
-        case 28: phraseEl.textContent = '1...'
+        case 28: phraseEl.textContent = 'ВЫЙДЕШЬ ЕЩЕ РАЗ - УЙДУ В ПЕРЕЗАГРУЗКУ'
             break;
-        case 29: phraseEl.textContent = '0...'
+        case 29: phraseEl.textContent = 'ПЕРЕЗАГРУЗКА ЧЕРЕЗ 5...'
             break;
-        case 30: phraseEl.textContent = '-1...'
+        case 30: phraseEl.textContent = '4...'
             break;
-        case 31: phraseEl.textContent = '-2...'
+        case 31: phraseEl.textContent = '3...'
             break;
-        case 32: phraseEl.textContent = 'ХАХАХ)) НО ТЕПЕРЬ И ПРАВДА ПЕРЕЗАГРУЖУСЬ.'
+        case 32: phraseEl.textContent = '2...'
             break;
-        case 33: phraseEl.textContent = '[RELOADING ll.......]'
+        case 33: phraseEl.textContent = '1...'
             break;
-        case 34: phraseEl.textContent = '[RELOADING lllll....]'
+        case 34: phraseEl.textContent = '0...'
             break;
-        case 35: phraseEl.textContent = '[RELOADING lllllllll]'
+        case 35: phraseEl.textContent = '-1...'
             break;
-        case 36: phraseEl.textContent = '.........................'
+        case 36: phraseEl.textContent = '-2...'
             break;
-        case 37: phrase = 0; phraseEl.textContent = 'НЕ ВЫХОДИ ЗА ЛИНИЮ!';
+        case 37: phraseEl.textContent = 'ХАХАХ)) НО ТЕПЕРЬ И ПРАВДА ПЕРЕЗАГРУЖУСЬ.'
+            break;
+        case 38: phraseEl.textContent = '[RELOADING ll.......]'
+            break;
+        case 39: phraseEl.textContent = '[RELOADING lllll....]'
+            break;
+        case 40: phraseEl.textContent = '[RELOADING lllllllll]'
+            break;
+        case 41: phraseEl.textContent = '.........................'
+            break;
+        case 42: phrase = 0; phraseEl.textContent = 'НЕ ВЫХОДИ ЗА ЛИНИЮ!';
             break;
 
     }
