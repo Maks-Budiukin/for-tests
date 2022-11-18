@@ -5,6 +5,7 @@ const DOWN = 40;
 
 
 const square = document.querySelector('.square');
+const exit = document.querySelector('.exit')
 const phraseEl = document.querySelector('.phrase')
 document.addEventListener('keydown', move);
 
@@ -13,7 +14,7 @@ let y = 0;
 let phrase = 0;
 
 function move(event) {
-    // square.setAttribute("style", `transition: transform 2s ease`)
+    
     if (event.keyCode === DOWN) {
         y += 30;
         square.setAttribute("style", `transform: translate(${x}px, ${y}px);transition: transform 0.3s ease`)
@@ -106,47 +107,51 @@ function setPhrase() {
             break;
         case 14: phraseEl.textContent = 'ПОГОДИ, Я ВСЕ ЕЩЕ СМЕЮСЬ)))))'
             break;
-        case 15: phraseEl.textContent = 'ЛАДНО, ТЕПЕРЬ СЕРЬЕЗНО, НЕ ВЫХОДИ ЗА ЛИНИЮ!'
+        case 15: phraseEl.textContent = 'ОЙ, СМОТРИ! ДЫРКА! ПРОЛЕЗЕШЬ?'; exit.classList.remove('visually-hidden');
             break;
-        case 16: phraseEl.textContent = 'ТЫ ДЕЛАЕШЬ МНЕ БОЛЬНО КАЖДЫЙ РАЗ, КОГДА ПЫТАЕШЬСЯ ВЫЙТИ!'
+        case 16: phraseEl.textContent = 'КТО-ТО СЛИШКОМ МНОГО КУШАЕТ)))))'; exit.classList.add('visually-hidden');
             break;
-        case 17: phraseEl.textContent = 'АЙ!'
+        case 17: phraseEl.textContent = 'ЛАДНО, ТЕПЕРЬ СЕРЬЕЗНО, НЕ ВЫХОДИ ЗА ЛИНИЮ!'
             break;
-        case 18: phraseEl.textContent = 'АЙ! ОЙ! НУ ХВАТИТ'
+        case 18: phraseEl.textContent = 'ТЫ ДЕЛАЕШЬ МНЕ БОЛЬНО КАЖДЫЙ РАЗ, КОГДА ПЫТАЕШЬСЯ ВЫЙТИ!'
             break;
-        case 19: phraseEl.textContent = 'Я ТАК И ЗНАЛ, ЧТО ТВОЯ ЦЕЛЬ - СДЕЛАТЬ МНЕ БОЛЬНО!'
+        case 19: phraseEl.textContent = 'АЙ!'
             break;
-        case 20: phraseEl.textContent = 'ЛАДНО, МНЕ НЕ БОЛЬНО. НО Я ОБИДЕЛСЯ.'
+        case 20: phraseEl.textContent = 'АЙ! ОЙ! НУ ХВАТИТ'
             break;
-        case 21: phraseEl.textContent = 'ВЫЙДЕШЬ ЕЩЕ РАЗ - УЙДУ В ПЕРЕЗАГРУЗКУ'
+        case 21: phraseEl.textContent = 'Я ТАК И ЗНАЛ, ЧТО ТВОЯ ЦЕЛЬ - СДЕЛАТЬ МНЕ БОЛЬНО!'
             break;
-        case 22: phraseEl.textContent = 'ПЕРЕЗАГРУЗКА ЧЕРЕЗ 5...'
+        case 22: phraseEl.textContent = 'ЛАДНО, МНЕ НЕ БОЛЬНО. НО Я ОБИДЕЛСЯ.'
             break;
-        case 23: phraseEl.textContent = '4...'
+        case 23: phraseEl.textContent = 'ВЫЙДЕШЬ ЕЩЕ РАЗ - УЙДУ В ПЕРЕЗАГРУЗКУ'
             break;
-        case 24: phraseEl.textContent = '3...'
+        case 24: phraseEl.textContent = 'ПЕРЕЗАГРУЗКА ЧЕРЕЗ 5...'
             break;
-        case 25: phraseEl.textContent = '2...'
+        case 25: phraseEl.textContent = '4...'
             break;
-        case 26: phraseEl.textContent = '1...'
+        case 26: phraseEl.textContent = '3...'
             break;
-        case 27: phraseEl.textContent = '0...'
+        case 27: phraseEl.textContent = '2...'
             break;
-        case 28: phraseEl.textContent = '-1...'
+        case 28: phraseEl.textContent = '1...'
             break;
-        case 29: phraseEl.textContent = '-2...'
+        case 29: phraseEl.textContent = '0...'
             break;
-        case 30: phraseEl.textContent = 'ХАХАХ)) НО ТЕПЕРЬ И ПРАВДА ПЕРЕЗАГРУЖУСЬ.'
+        case 30: phraseEl.textContent = '-1...'
             break;
-        case 31: phraseEl.textContent = '[RELOADING ll.......]'
+        case 31: phraseEl.textContent = '-2...'
             break;
-        case 32: phraseEl.textContent = '[RELOADING lllll....]'
+        case 32: phraseEl.textContent = 'ХАХАХ)) НО ТЕПЕРЬ И ПРАВДА ПЕРЕЗАГРУЖУСЬ.'
             break;
-        case 33: phraseEl.textContent = '[RELOADING lllllllll]'
+        case 33: phraseEl.textContent = '[RELOADING ll.......]'
             break;
-        case 34: phraseEl.textContent = '.........................'
+        case 34: phraseEl.textContent = '[RELOADING lllll....]'
             break;
-        case 35: phrase = 0; phraseEl.textContent = 'НЕ ВЫХОДИ ЗА ЛИНИЮ!';
+        case 35: phraseEl.textContent = '[RELOADING lllllllll]'
+            break;
+        case 36: phraseEl.textContent = '.........................'
+            break;
+        case 37: phrase = 0; phraseEl.textContent = 'НЕ ВЫХОДИ ЗА ЛИНИЮ!';
             break;
 
     }

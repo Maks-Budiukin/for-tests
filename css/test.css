@@ -32,6 +32,17 @@ div {
     padding: 0;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -100,12 +111,23 @@ div {
 }
 
 .field {
+    position: relative;
     width: 495px;
     height: 290px;
     margin-top: 25px;
     border: 3px solid red;
     margin-left: auto;
     margin-right: auto;
+}
+
+.exit {
+    position: absolute;
+    top: 46%;
+    left: -20px;
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+
 }
 
 .phrase {
