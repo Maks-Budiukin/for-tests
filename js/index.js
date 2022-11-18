@@ -52,30 +52,6 @@ function reset() {
     
 }
 
-// function setPhrase() {
-//     if (phrase === 1) {
-//         phraseEl.textContent = 'Я ЖЕ СКАЗАЛ - НЕ ВЫХОДИ!'
-//     } else if (phrase === 1) {
-//         phraseEl.textContent = 'Я ЖЕ СКАЗАЛ - НЕ ВЫХОДИ!'
-//     } else if (phrase === 1) {
-//         phraseEl.textContent = 'Я ЖЕ СКАЗАЛ - НЕ ВЫХОДИ!'
-//     } else if (phrase === 1) {
-//         phraseEl.textContent = 'Я ЖЕ СКАЗАЛ - НЕ ВЫХОДИ!'
-//     } else if (phrase === 1) {
-//         phraseEl.textContent = 'Я ЖЕ СКАЗАЛ - НЕ ВЫХОДИ!'
-//     } else if (phrase === 1) {
-//         phraseEl.textContent = 'Я ЖЕ СКАЗАЛ - НЕ ВЫХОДИ!'
-//     } else if (phrase === 1) {
-//         phraseEl.textContent = 'Я ЖЕ СКАЗАЛ - НЕ ВЫХОДИ!'
-//     } else if (phrase === 1) {
-//         phraseEl.textContent = 'Я ЖЕ СКАЗАЛ - НЕ ВЫХОДИ!'
-//     } else if (phrase === 1) {
-//         phraseEl.textContent = 'Я ЖЕ СКАЗАЛ - НЕ ВЫХОДИ!'
-//     } else if (phrase === 1) {
-//         phraseEl.textContent = 'Я ЖЕ СКАЗАЛ - НЕ ВЫХОДИ!'
-//     } else 
-// }
-
 function setPhrase() {
     switch (phrase) {
         case 0: phraseEl.textContent = 'НЕ ВЫХОДИ ЗА ЛИНИЮ!'
