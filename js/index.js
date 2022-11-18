@@ -8,7 +8,7 @@ const square = document.querySelector('.square');
 const exit = document.querySelector('.exit')
 const exitBigger = document.querySelector('.exit-bigger')
 const phraseEl = document.querySelector('.phrase')
-document.addEventListener('keydown', move);
+document.addEventListener('keyup', move);
 
 let x = 0;
 let y = 0;
